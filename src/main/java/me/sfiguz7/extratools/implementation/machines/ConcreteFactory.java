@@ -1,17 +1,12 @@
 package me.sfiguz7.extratools.implementation.machines;
 
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockBreakHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.core.attributes.RecipeDisplayItem;
+import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.sfiguz7.extratools.lists.ETItems;
 import org.bukkit.Material;
-import org.bukkit.block.Block;
-import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
@@ -21,14 +16,12 @@ public class ConcreteFactory extends AContainer implements RecipeDisplayItem {
 
     public ConcreteFactory() {
         super(ETItems.extra_tools, ETItems.CONCRETE_FACTORY, RecipeType.ENHANCED_CRAFTING_TABLE,
-            new ItemStack[] {new ItemStack(Material.WATER_BUCKET), SlimefunItems.GILDED_IRON,
+            new ItemStack[] {new ItemStack(Material.WATER_BUCKET), SlimefunItems.GILDED_IRON.item(),
                 new ItemStack(Material.WATER_BUCKET),
-                SlimefunItems.ADVANCED_CIRCUIT_BOARD, SlimefunItems.ELECTRIC_MOTOR,
-                SlimefunItems.ADVANCED_CIRCUIT_BOARD,
-                new ItemStack(Material.WATER_BUCKET), SlimefunItems.SMALL_CAPACITOR,
+                SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
+                SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(),
+                new ItemStack(Material.WATER_BUCKET), SlimefunItems.SMALL_CAPACITOR.item(),
                 new ItemStack(Material.WATER_BUCKET)});
-
-        addItemHandler(onBreak());
     }
 
     @Override
@@ -109,22 +102,6 @@ public class ConcreteFactory extends AContainer implements RecipeDisplayItem {
     @Override
     public int getSpeed() {
         return 1;
-    }
-
-    public BlockBreakHandler onBreak() {
-        return new BlockBreakHandler(false, false) {
-
-            @Override
-            public void onPlayerBreak(BlockBreakEvent e, ItemStack item, List<ItemStack> drops) {
-                Block b = e.getBlock();
-                BlockMenu inv = BlockStorage.getInventory(b);
-
-                if (inv != null) {
-                    inv.dropItems(b.getLocation(), getInputSlots());
-                    inv.dropItems(b.getLocation(), getOutputSlots());
-                }
-            }
-        };
     }
 
 }

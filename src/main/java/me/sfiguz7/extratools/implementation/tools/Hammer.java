@@ -1,10 +1,10 @@
 package me.sfiguz7.extratools.implementation.tools;
 
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ToolUseHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.core.handlers.ToolUseHandler;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
 import me.sfiguz7.extratools.lists.ETItems;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -29,7 +29,6 @@ public class Hammer extends SimpleSlimefunItem<ToolUseHandler> {
                 ItemStack drop = getDrop(b);
 
                 if (drop != null) {
-                    //Can't throw NPEs now
                     b.getLocation().getWorld().dropItemNaturally(b.getLocation(), drop);
                     e.setDropItems(false);
                 }
@@ -37,43 +36,34 @@ public class Hammer extends SimpleSlimefunItem<ToolUseHandler> {
         };
     }
 
-
     public ItemStack getDrop(Block b) {
-
-        Material m = b.getType();
-
-        switch (m) {
-            case STONE:
-            case GRANITE:
-            case DIORITE:
-            case ANDESITE:
-            case COBBLESTONE: {
+        String name = b.getType().name();
+        switch (name) {
+            case "STONE":
+            case "GRANITE":
+            case "DIORITE":
+            case "ANDESITE":
+            case "COBBLESTONE":
                 return new ItemStack(Material.GRAVEL);
-            }
-            case GRAVEL:
-            case GRASS_BLOCK:
-            case DIRT:
-            case COARSE_DIRT:
-            case PODZOL: {
+            case "GRAVEL":
+            case "GRASS_BLOCK":
+            case "DIRT":
+            case "COARSE_DIRT":
+            case "PODZOL":
                 return new ItemStack(Material.SAND);
-            }
-            case IRON_ORE:
-            case DEEPSLATE_IRON_ORE: {
-                return SlimefunItems.IRON_DUST;
-            }
-            case GOLD_ORE:
-            case DEEPSLATE_GOLD_ORE: {
-                return SlimefunItems.GOLD_DUST;
-            }
-            case COPPER_ORE:
-            case DEEPSLATE_COPPER_ORE: {
-                return SlimefunItems.COPPER_DUST;
-            }
-            case NETHERRACK: {
+            case "IRON_ORE":
+            case "DEEPSLATE_IRON_ORE":
+                return SlimefunItems.IRON_DUST.item();
+            case "GOLD_ORE":
+            case "DEEPSLATE_GOLD_ORE":
+                return SlimefunItems.GOLD_DUST.item();
+            case "COPPER_ORE":
+            case "DEEPSLATE_COPPER_ORE":
+                return SlimefunItems.COPPER_DUST.item();
+            case "NETHERRACK":
                 return new ItemStack(Material.SOUL_SAND);
-            }
+            default:
+                return null;
         }
-
-        return null;
     }
 }

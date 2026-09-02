@@ -1,17 +1,12 @@
 package me.sfiguz7.extratools.implementation.machines;
 
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockBreakHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.core.attributes.RecipeDisplayItem;
+import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.sfiguz7.extratools.lists.ETItems;
 import org.bukkit.Material;
-import org.bukkit.block.Block;
-import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
@@ -21,12 +16,10 @@ public class Pulverizer extends AContainer implements RecipeDisplayItem {
 
     public Pulverizer() {
         super(ETItems.extra_tools, ETItems.PULVERIZER, RecipeType.ENHANCED_CRAFTING_TABLE,
-            new ItemStack[] {SlimefunItems.SILICON, SlimefunItems.HARDENED_METAL_INGOT, SlimefunItems.SILICON,
-                SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.STEEL_PLATE, SlimefunItems.ELECTRIC_MOTOR,
-                new ItemStack(Material.IRON_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR,
+            new ItemStack[] {SlimefunItems.SILICON.item(), SlimefunItems.HARDENED_METAL_INGOT.item(), SlimefunItems.SILICON.item(),
+                SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.STEEL_PLATE.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
+                new ItemStack(Material.IRON_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR.item(),
                 new ItemStack(Material.IRON_PICKAXE)});
-
-        addItemHandler(onBreak());
     }
 
     @Override
@@ -99,22 +92,6 @@ public class Pulverizer extends AContainer implements RecipeDisplayItem {
     @Override
     public int getSpeed() {
         return 4;
-    }
-
-    public BlockBreakHandler onBreak() {
-        return new BlockBreakHandler(false, false) {
-
-            @Override
-            public void onPlayerBreak(BlockBreakEvent e, ItemStack item, List<ItemStack> drops) {
-                Block b = e.getBlock();
-                BlockMenu inv = BlockStorage.getInventory(b);
-
-                if (inv != null) {
-                    inv.dropItems(b.getLocation(), getInputSlots());
-                    inv.dropItems(b.getLocation(), getOutputSlots());
-                }
-            }
-        };
     }
 
 }

@@ -1,17 +1,15 @@
 package me.sfiguz7.extratools.implementation.machines;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetComponent;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockBreakHandler;
-import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.core.attributes.EnergyNetComponent;
+import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
+import io.github.thebusybiscuit.slimefun5.core.networks.energy.EnergyNetComponentType;
+import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ClickAction;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
@@ -20,13 +18,10 @@ import me.sfiguz7.extratools.implementation.interfaces.ETInventoryBlock;
 import me.sfiguz7.extratools.lists.ETItems;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
-import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.List;
-
 
 public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implements ETInventoryBlock,
     EnergyNetComponent {
@@ -40,12 +35,12 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
 
     public CobblestoneGenerator() {
         super(ETItems.extra_tools, ETItems.COBBLESTONE_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE,
-            new ItemStack[] {SlimefunItems.PROGRAMMABLE_ANDROID_MINER, SlimefunItems.MAGNESIUM_INGOT,
-                SlimefunItems.PROGRAMMABLE_ANDROID_MINER,
-                new ItemStack(Material.WATER_BUCKET), SlimefunItems.BLISTERING_INGOT_3,
+            new ItemStack[] {SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(), SlimefunItems.MAGNESIUM_INGOT.item(),
+                SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(),
+                new ItemStack(Material.WATER_BUCKET), SlimefunItems.BLISTERING_INGOT_3.item(),
                 new ItemStack(Material.LAVA_BUCKET),
-                SlimefunItems.PROGRAMMABLE_ANDROID_MINER, SlimefunItems.BIG_CAPACITOR,
-                SlimefunItems.PROGRAMMABLE_ANDROID_MINER});
+                SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(), SlimefunItems.BIG_CAPACITOR.item(),
+                SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item()});
 
         createPreset(this, this::constructMenu);
 
@@ -54,32 +49,20 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
 
     private void constructMenu(BlockMenuPreset preset) {
         for (int i : border) {
-            preset.addItem(i, new CustomItemStack(new ItemStack(Material.GRAY_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(Material.GRAY_STAINED_GLASS_PANE, " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : inputBorder) {
-            preset.addItem(i, new CustomItemStack(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : outputBorder) {
-            preset.addItem(i, new CustomItemStack(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
 
         for (int i : getOutputSlots()) {
-            preset.addMenuClickHandler(i, new ChestMenu.AdvancedMenuClickHandler() {
-
-                @Override
-                public boolean onClick(Player p, int slot, ItemStack cursor, ClickAction action) {
-                    return false;
-                }
-
-                @Override
-                public boolean onClick(InventoryClickEvent e, Player p, int slot, ItemStack cursor,
-                                       ClickAction action) {
-                    return cursor == null || cursor.getType() == Material.AIR;
-                }
-            });
+            preset.addMenuClickHandler(i, ChestMenuUtils.getDefaultOutputHandler());
         }
     }
 
@@ -124,23 +107,16 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
         return new BlockTicker() {
 
             @Override
-            // Fires first!! The method tick() fires after this
             public void uniqueTick() {
-                // Needed to keep track of all cobble gens at once,
-                // All it does is set back to max (for now 2, will be customizable)
-                // when it reaches the lowest possible (AKA 1)
                 if (decrement == 1) {
                     decrement = 2;
                     return;
                 }
                 decrement--;
-
             }
 
             @Override
             public void tick(Block b, SlimefunItem sf, Config data) {
-                // We only act once per decrement cycle, when decrement got to
-                // lowest and has been reset
                 if (decrement != 2) {
                     return;
                 }
@@ -167,4 +143,3 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
     }
 
 }
-
