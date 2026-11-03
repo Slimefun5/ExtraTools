@@ -1,5 +1,7 @@
 package me.sfiguz7.extratools.implementation.machines;
 
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
@@ -28,18 +30,18 @@ public abstract class ElectricComposter extends AContainer implements RecipeDisp
 
         for (Material leave : Tag.LEAVES.getValues()) {
             registerRecipe(8, new ItemStack[] { new ItemStack(leave, 8) },
-                new ItemStack[] { new ItemStack(Material.DIRT) });
+                new ItemStack[] { MaterialCompat.stack(XMaterial.DIRT) });
         }
         for (Material sapling : Tag.SAPLINGS.getValues()) {
             registerRecipe(8, new ItemStack[] { new ItemStack(sapling, 8) },
-                new ItemStack[] { new ItemStack(Material.DIRT) });
+                new ItemStack[] { MaterialCompat.stack(XMaterial.DIRT) });
         }
-        registerRecipe(8, new ItemStack[] { new ItemStack(Material.STONE, 4) },
-            new ItemStack[] { new ItemStack(Material.NETHERRACK) });
-        registerRecipe(8, new ItemStack[] { new ItemStack(Material.SAND, 2) },
-            new ItemStack[] { new ItemStack(Material.SOUL_SAND) });
-        registerRecipe(8, new ItemStack[] { new ItemStack(Material.WHEAT, 4) },
-            new ItemStack[] { new ItemStack(Material.NETHER_WART) });
+        registerRecipe(8, new ItemStack[] { MaterialCompat.stack(XMaterial.STONE, 4) },
+            new ItemStack[] { MaterialCompat.stack(XMaterial.NETHERRACK) });
+        registerRecipe(8, new ItemStack[] { MaterialCompat.stack(XMaterial.SAND, 2) },
+            new ItemStack[] { MaterialCompat.stack(XMaterial.SOUL_SAND) });
+        registerRecipe(8, new ItemStack[] { MaterialCompat.stack(XMaterial.WHEAT, 4) },
+            new ItemStack[] { MaterialCompat.stack(XMaterial.NETHER_WART) });
 
     }
 
@@ -57,7 +59,7 @@ public abstract class ElectricComposter extends AContainer implements RecipeDisp
 
     @Override
     public ItemStack getProgressBar() {
-        return new ItemStack(Material.WOODEN_HOE);
+        return MaterialCompat.stack(XMaterial.WOODEN_HOE);
     }
 
     @Override
@@ -79,12 +81,12 @@ public abstract class ElectricComposter extends AContainer implements RecipeDisp
         ONE(new ItemStack[] {
             SlimefunItems.GILDED_IRON.item(), SlimefunItems.MAGNESIUM_INGOT.item(), SlimefunItems.GILDED_IRON.item(),
             SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.COMPOSTER.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
-            new ItemStack(Material.IRON_HOE), SlimefunItems.MEDIUM_CAPACITOR.item(), new ItemStack(Material.IRON_HOE) }
+            MaterialCompat.stack(XMaterial.IRON_HOE), SlimefunItems.MEDIUM_CAPACITOR.item(), MaterialCompat.stack(XMaterial.IRON_HOE) }
         ),
         TWO(new ItemStack[] { SlimefunItems.HARDENED_METAL_INGOT.item(), SlimefunItems.BLISTERING_INGOT_3.item(),
             SlimefunItems.HARDENED_METAL_INGOT.item(),
             SlimefunItems.ELECTRIC_MOTOR.item(), ETItems.ELECTRIC_COMPOSTER.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
-            new ItemStack(Material.DIAMOND_HOE), SlimefunItems.LARGE_CAPACITOR.item(), new ItemStack(Material.DIAMOND_HOE) }
+            MaterialCompat.stack(XMaterial.DIAMOND_HOE), SlimefunItems.LARGE_CAPACITOR.item(), MaterialCompat.stack(XMaterial.DIAMOND_HOE) }
         );
 
         private final ItemStack[] recipe;

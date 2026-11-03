@@ -1,12 +1,13 @@
 package me.sfiguz7.extratools.implementation.machines;
 
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.sfiguz7.extratools.lists.ETItems;
-import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
@@ -18,37 +19,37 @@ public class Pulverizer extends AContainer implements RecipeDisplayItem {
         super(ETItems.extra_tools, ETItems.PULVERIZER, RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[] {SlimefunItems.SILICON.item(), SlimefunItems.HARDENED_METAL_INGOT.item(), SlimefunItems.SILICON.item(),
                 SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.STEEL_PLATE.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
-                new ItemStack(Material.IRON_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR.item(),
-                new ItemStack(Material.IRON_PICKAXE)});
+                MaterialCompat.stack(XMaterial.IRON_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR.item(),
+                MaterialCompat.stack(XMaterial.IRON_PICKAXE)});
     }
 
     @Override
     protected void registerDefaultRecipes() {
 
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.STONE, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.GRANITE, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.DIORITE, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.ANDESITE, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.COBBLESTONE, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.STONE, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.GRANITE, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.DIORITE, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.ANDESITE, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.COBBLESTONE, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
 
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.GRAVEL, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.GRASS_BLOCK, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.DIRT, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.COARSE_DIRT, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.PODZOL, 4)},
-            new ItemStack[] {new ItemStack(Material.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.GRAVEL, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.GRASS_BLOCK, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.DIRT, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.COARSE_DIRT, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.PODZOL, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SAND)});
 
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.NETHERRACK, 4)},
-            new ItemStack[] {new ItemStack(Material.SOUL_SAND)});
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.NETHERRACK, 4)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.SOUL_SAND)});
 
     }
 
@@ -66,7 +67,7 @@ public class Pulverizer extends AContainer implements RecipeDisplayItem {
 
     @Override
     public ItemStack getProgressBar() {
-        return new ItemStack(Material.IRON_PICKAXE);
+        return MaterialCompat.stack(XMaterial.IRON_PICKAXE);
     }
 
     @Override

@@ -1,8 +1,8 @@
 name: ExtraTools
 version: ${version}
 author: Sfiguz7
-description: A Slimefun5-Addon aimed at implementing useful tools
-website: https://github.com/Sfiguz7/ExtraTools
+description: A Slimefun addon that adds useful tools and machines.
+website: https://github.com/Slimefun5/ExtraTools
 
 main: me.sfiguz7.extratools.ExtraTools
 depend: [Slimefun]

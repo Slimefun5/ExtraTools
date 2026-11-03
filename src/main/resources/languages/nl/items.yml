@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Hamer'
+  type:
+    - '&7&oGereedschap'
+  description:
+    - '&9Vergruist blokken'
+
+GOLD_TRANSMUTER:
+  name: 'Goudtransmutator'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektrische Composteerder'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &b⚡ &7Snelheid: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektrische Composteerder II'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &b⚡ &7Snelheid: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+COBBLESTONE_GENERATOR:
+  name: 'Keiengenerator'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Buffer'
+
+VAPORIZER:
+  name: 'Verdamper'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+CONCRETE_FACTORY:
+  name: 'Betonfabriek'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+PULVERIZER:
+  name: 'Vergruizer'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &b⚡ &7Snelheid: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'

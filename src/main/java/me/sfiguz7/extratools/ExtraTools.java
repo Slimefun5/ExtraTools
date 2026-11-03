@@ -5,6 +5,7 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.researches.Research;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.sfiguz7.extratools.implementation.machines.CobblestoneGenerator;
 import me.sfiguz7.extratools.implementation.machines.ConcreteFactory;
 import me.sfiguz7.extratools.implementation.machines.ElectricComposter;
@@ -15,24 +16,19 @@ import me.sfiguz7.extratools.implementation.tools.Hammer;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-
 public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
-    public static ExtraTools instance;
+    private static final int BSTATS_ID = 6945;
+
+    private static ExtraTools instance;
     private int researchId = 4100;
 
     @Override
     public void onEnable() {
-
         instance = this;
-
-        if (!new File(getDataFolder(), "config.yml").exists()) {
-            saveDefaultConfig();
+        if (addonMetricsEnabled()) {
+            new Metrics(this, BSTATS_ID);
         }
-
-        int bStatsId = 6945;
-        new Metrics(this, bStatsId);
 
         Hammer hammer = new Hammer();
         hammer.register(this);
@@ -82,18 +78,24 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         vaporizer.register(this);
         registerResearch("vaporizer", "Vaporizer", 18, vaporizer);
 
-        ConcreteFactory concreteFactory = new ConcreteFactory();
-        concreteFactory.register(this);
-        registerResearch("concrete_factory", "Concrete Factory", 12, concreteFactory);
+        if (XMaterial.WHITE_CONCRETE.isSupported()) {
+            ConcreteFactory concreteFactory = new ConcreteFactory();
+            concreteFactory.register(this);
+            registerResearch("concrete_factory", "Concrete Factory", 12, concreteFactory);
+        }
 
         Pulverizer pulverizer = new Pulverizer();
         pulverizer.register(this);
         registerResearch("pulverizer", "Pulverizer", 18, pulverizer);
 
-        // Register addon translations with Slimefun5
         Slimefun.getItemTranslationService().registerTranslations(this);
-        Slimefun.getMenuTranslationService().registerTranslations(this);
+        Slimefun.getLocalization().registerItemGroupTranslations(this);
+        Slimefun.getLocalization().registerResearchTranslations(this);
+    }
 
+    /** Core reports every addon's metrics itself unless the server sets {@code metrics.disable-addon-metrics} to false. */
+    private static boolean addonMetricsEnabled() {
+        return Slimefun.getCfg().contains("metrics.disable-addon-metrics") && !Slimefun.getCfg().getBoolean("metrics.disable-addon-metrics");
     }
 
     private void registerResearch(String key, String name, int cost, SlimefunItem item) {
@@ -103,13 +105,8 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
     }
 
     @Override
-    public void onDisable() {
-        // Logic for disabling the plugin...
-    }
-
-    @Override
     public String getBugTrackerURL() {
-        return "https://github.com/Sfiguz7/ExtraTools/issues";
+        return "https://github.com/Slimefun5/ExtraTools/issues";
     }
 
     @Override

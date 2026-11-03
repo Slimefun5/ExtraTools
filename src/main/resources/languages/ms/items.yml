@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Tukul'
+  type:
+    - '&7&oAlat'
+  description:
+    - '&9Menghancurkan blok menjadi serbuk'
+
+GOLD_TRANSMUTER:
+  name: 'Pentransmutasi Emas'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7Penimbal 256 J'
+
+ELECTRIC_COMPOSTER:
+  name: 'Pengkompos Elektrik'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &b⚡ &7Kelajuan: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7Penimbal 256 J'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Pengkompos Elektrik II'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &b⚡ &7Kelajuan: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7Penimbal 256 J'
+
+COBBLESTONE_GENERATOR:
+  name: 'Penjana Batu Bulat'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7Penimbal 512 J'
+
+VAPORIZER:
+  name: 'Pengewap'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7Penimbal 256 J'
+
+CONCRETE_FACTORY:
+  name: 'Kilang Konkrit'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7Penimbal 256 J'
+
+PULVERIZER:
+  name: 'Penghancur'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &b⚡ &7Kelajuan: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7Penimbal 256 J'

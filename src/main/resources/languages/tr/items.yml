@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Çekiç'
+  type:
+    - '&7&oAlet'
+  description:
+    - '&9Blokları toz haline getirir'
+
+GOLD_TRANSMUTER:
+  name: 'Altın Dönüştürücü'
+  type:
+    - '&7&oMakine'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektrikli Kompostlayıcı'
+  type:
+    - '&7&oMakine'
+  stats:
+    - '&8⇨ &b⚡ &7Hız: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektrikli Kompostlayıcı II'
+  type:
+    - '&7&oMakine'
+  stats:
+    - '&8⇨ &b⚡ &7Hız: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+COBBLESTONE_GENERATOR:
+  name: 'Kırık Taş Jeneratörü'
+  type:
+    - '&7&oMakine'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Tampon'
+
+VAPORIZER:
+  name: 'Buharlaştırıcı'
+  type:
+    - '&7&oMakine'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+CONCRETE_FACTORY:
+  name: 'Beton Fabrikası'
+  type:
+    - '&7&oMakine'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+PULVERIZER:
+  name: 'Toz Öğütücü'
+  type:
+    - '&7&oMakine'
+  stats:
+    - '&8⇨ &b⚡ &7Hız: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'

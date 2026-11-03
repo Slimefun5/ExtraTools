@@ -5,18 +5,9 @@ plugins {
 }
 
 group = "me.sfiguz7"
-version = "5.3.3"
-description = "ExtraTools is a Slimefun5 addon aimed at implementing useful tools"
+description = "ExtraTools is a Slimefun addon that adds useful tools and machines."
 
-apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/stable/slimefun-addon.gradle")
-
-version = "5.3.3"
-
-tasks.withType<ProcessResources> {
-    filesMatching("plugin.yml") {
-        expand(mapOf("version" to "5.3.3"))
-    }
-}
+apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/main/slimefun-addon.gradle")
 
 dependencies {
     implementation("org.bstats:bstats-bukkit:2.2.1")
@@ -24,7 +15,6 @@ dependencies {
 
 tasks {
     shadowJar {
-        archiveFileName.set("ExtraTools-5.3.3.jar")
-        relocate("org.bstats", "me.sfiguz7.extratools.bstats")
+        relocate("org.bstats", "me.sfiguz7.extratools.libs.bstats")
     }
 }

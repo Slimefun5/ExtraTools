@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Palu'
+  type:
+    - '&7&oAlat'
+  description:
+    - '&9Menghancurkan blok menjadi serbuk'
+
+GOLD_TRANSMUTER:
+  name: 'Transmutator Emas'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+ELECTRIC_COMPOSTER:
+  name: 'Komposter Elektrik'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &b⚡ &7Kecepatan: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Komposter Elektrik II'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &b⚡ &7Kecepatan: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+COBBLESTONE_GENERATOR:
+  name: 'Generator Batu Bulat'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Buffer'
+
+VAPORIZER:
+  name: 'Penguap'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+CONCRETE_FACTORY:
+  name: 'Pabrik Beton'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
+
+PULVERIZER:
+  name: 'Penghancur'
+  type:
+    - '&7&oMesin'
+  stats:
+    - '&8⇨ &b⚡ &7Kecepatan: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'

@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Búa'
+  type:
+    - '&7&oDụng Cụ'
+  description:
+    - '&9Nghiền các khối thành bột'
+
+GOLD_TRANSMUTER:
+  name: 'Máy Biến Đổi Vàng'
+  type:
+    - '&7&oMáy Móc'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7Dung Lượng 256 J'
+
+ELECTRIC_COMPOSTER:
+  name: 'Máy Ủ Phân Điện'
+  type:
+    - '&7&oMáy Móc'
+  stats:
+    - '&8⇨ &b⚡ &7Tốc Độ: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7Dung Lượng 256 J'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Máy Ủ Phân Điện II'
+  type:
+    - '&7&oMáy Móc'
+  stats:
+    - '&8⇨ &b⚡ &7Tốc Độ: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7Dung Lượng 256 J'
+
+COBBLESTONE_GENERATOR:
+  name: 'Máy Tạo Đá Cuội'
+  type:
+    - '&7&oMáy Móc'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7Dung Lượng 512 J'
+
+VAPORIZER:
+  name: 'Máy Hóa Hơi'
+  type:
+    - '&7&oMáy Móc'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7Dung Lượng 256 J'
+
+CONCRETE_FACTORY:
+  name: 'Nhà Máy Bê Tông'
+  type:
+    - '&7&oMáy Móc'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7Dung Lượng 256 J'
+
+PULVERIZER:
+  name: 'Máy Nghiền Bột'
+  type:
+    - '&7&oMáy Móc'
+  stats:
+    - '&8⇨ &b⚡ &7Tốc Độ: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7Dung Lượng 256 J'

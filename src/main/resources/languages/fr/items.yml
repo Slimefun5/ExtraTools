@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Marteau'
+  type:
+    - '&7&oOutil'
+  description:
+    - '&9Pulvérise les blocs'
+
+GOLD_TRANSMUTER:
+  name: 'Transmutateur d''or'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+ELECTRIC_COMPOSTER:
+  name: 'Composteur électrique'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &b⚡ &7Vitesse : &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Composteur électrique II'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &b⚡ &7Vitesse : &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+COBBLESTONE_GENERATOR:
+  name: 'Générateur de pierre'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Tampon'
+
+VAPORIZER:
+  name: 'Vaporisateur'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+CONCRETE_FACTORY:
+  name: 'Usine à béton'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+PULVERIZER:
+  name: 'Pulvérisateur'
+  type:
+    - '&7&oMachine'
+  stats:
+    - '&8⇨ &b⚡ &7Vitesse : &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'

@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Āmurs'
+  type:
+    - '&7&oRīks'
+  description:
+    - '&9Sasmalcina blokus'
+
+GOLD_TRANSMUTER:
+  name: 'Zelta transmutētājs'
+  type:
+    - '&7&oMašīna'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektriskais komposteris'
+  type:
+    - '&7&oMašīna'
+  stats:
+    - '&8⇨ &b⚡ &7Ātrums: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektriskais komposteris II'
+  type:
+    - '&7&oMašīna'
+  stats:
+    - '&8⇨ &b⚡ &7Ātrums: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+COBBLESTONE_GENERATOR:
+  name: 'Bruģakmens ģenerators'
+  type:
+    - '&7&oMašīna'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J buferis'
+
+VAPORIZER:
+  name: 'Iztvaicētājs'
+  type:
+    - '&7&oMašīna'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+CONCRETE_FACTORY:
+  name: 'Betona rūpnīca'
+  type:
+    - '&7&oMašīna'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+PULVERIZER:
+  name: 'Smalcinātājs'
+  type:
+    - '&7&oMašīna'
+  stats:
+    - '&8⇨ &b⚡ &7Ātrums: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'

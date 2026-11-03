@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Martilyo'
+  type:
+    - '&7&oKasangkapan'
+  description:
+    - '&9Dinudurog ang mga bloke'
+
+GOLD_TRANSMUTER:
+  name: 'Transmuter ng Ginto'
+  type:
+    - '&7&oMakina'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J na Buffer'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektrikong Composter'
+  type:
+    - '&7&oMakina'
+  stats:
+    - '&8⇨ &b⚡ &7Bilis: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J na Buffer'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektrikong Composter II'
+  type:
+    - '&7&oMakina'
+  stats:
+    - '&8⇨ &b⚡ &7Bilis: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J na Buffer'
+
+COBBLESTONE_GENERATOR:
+  name: 'Generator ng Batong Kalye'
+  type:
+    - '&7&oMakina'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J na Buffer'
+
+VAPORIZER:
+  name: 'Pansingaw'
+  type:
+    - '&7&oMakina'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J na Buffer'
+
+CONCRETE_FACTORY:
+  name: 'Pabrika ng Kongkreto'
+  type:
+    - '&7&oMakina'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J na Buffer'
+
+PULVERIZER:
+  name: 'Pandurog'
+  type:
+    - '&7&oMakina'
+  stats:
+    - '&8⇨ &b⚡ &7Bilis: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J na Buffer'

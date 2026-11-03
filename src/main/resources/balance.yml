@@ -1,0 +1,13 @@
+# Per-item balance scores (0-100) for ExtraTools, relative to vanilla Minecraft.
+# Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
+#   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
+#   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+scores:
+  HAMMER: 12                 # iron tool that turns stone to gravel and dirt to sand; ores give one dust
+  CONCRETE_FACTORY: 12       # 8 powder to 8 concrete at 16 J/s, a convenience over placing it in water
+  GOLD_TRANSMUTER: 15        # carat gold back to vanilla gold, gold ingot to gold dust, 18 J/s
+  VAPORIZER: 15              # water and lava buckets to salt and sulfate, 32 J/s
+  ELECTRIC_COMPOSTER: 16     # leaves, saplings, stone, sand, wheat to basic blocks at 1x, 18 J/s
+  PULVERIZER: 18             # cobblestone and dirt to sand at 4x, 50 J/s; enables sand automation
+  ELECTRIC_COMPOSTER_2: 20   # the composter at 4x, 50 J/s, Blistering Ingot recipe
+  COBBLESTONE_GENERATOR: 22  # endless cobblestone for 32 J/s, four Android Miners in the recipe

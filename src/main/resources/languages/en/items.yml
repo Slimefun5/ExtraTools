@@ -1,68 +1,65 @@
-# ExtraTools item translations (English)
-# Unified block-lore format for Slimefun5
-
 HAMMER:
-  name: "&cHammer"
+  name: 'Hammer'
   type:
-    - "&7&oTool"
+    - '&7&oTool'
   description:
-    - "&9Pulverizes blocks"
+    - '&9Pulverizes blocks'
 
 GOLD_TRANSMUTER:
-  name: "&6Gold Transmuter"
+  name: 'Gold Transmuter'
   type:
-    - "&7&oMachine"
+    - '&7&oMachine'
   stats:
-    - "&8⇨ &e⚡ &718 J/s"
-    - "&8⇨ &e⚡ &7256 J Buffer"
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
 
 ELECTRIC_COMPOSTER:
-  name: "&cElectric Composter"
+  name: 'Electric Composter'
   type:
-    - "&7&oMachine"
+    - '&7&oMachine'
   stats:
-    - "&8⇨ &b⚡ &7Speed: 1x"
-    - "&8⇨ &e⚡ &718 J/s"
-    - "&8⇨ &e⚡ &7256 J Buffer"
+    - '&8⇨ &b⚡ &7Speed: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
 
 ELECTRIC_COMPOSTER_2:
-  name: "&cElectric Composter &7(&eII&7)"
+  name: 'Electric Composter II'
   type:
-    - "&7&oMachine"
+    - '&7&oMachine'
   stats:
-    - "&8⇨ &b⚡ &7Speed: 4x"
-    - "&8⇨ &e⚡ &750 J/s"
-    - "&8⇨ &e⚡ &7256 J Buffer"
+    - '&8⇨ &b⚡ &7Speed: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
 
 COBBLESTONE_GENERATOR:
-  name: "&cCobblestone Generator"
+  name: 'Cobblestone Generator'
   type:
-    - "&7&oMachine"
+    - '&7&oMachine'
   stats:
-    - "&8⇨ &e⚡ &736 J/s"
-    - "&8⇨ &e⚡ &7256 J Buffer"
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Buffer'
 
 VAPORIZER:
-  name: "&cVaporizer"
+  name: 'Vaporizer'
   type:
-    - "&7&oMachine"
+    - '&7&oMachine'
   stats:
-    - "&8⇨ &e⚡ &732 J/s"
-    - "&8⇨ &e⚡ &7256 J Buffer"
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
 
 CONCRETE_FACTORY:
-  name: "&4Concrete Factory"
+  name: 'Concrete Factory'
   type:
-    - "&7&oMachine"
+    - '&7&oMachine'
   stats:
-    - "&8⇨ &e⚡ &716 J/s"
-    - "&8⇨ &e⚡ &7256 J Buffer"
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'
 
 PULVERIZER:
-  name: "&cPulverizer"
+  name: 'Pulverizer'
   type:
-    - "&7&oMachine"
+    - '&7&oMachine'
   stats:
-    - "&8⇨ &b⚡ &7Speed: 1x"
-    - "&8⇨ &e⚡ &718 J/s"
-    - "&8⇨ &e⚡ &7256 J Buffer"
+    - '&8⇨ &b⚡ &7Speed: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffer'

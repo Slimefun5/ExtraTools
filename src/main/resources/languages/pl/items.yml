@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Młot'
+  type:
+    - '&7&oNarzędzie'
+  description:
+    - '&9Rozdrabnia bloki na proszek'
+
+GOLD_TRANSMUTER:
+  name: 'Transmuter Złota'
+  type:
+    - '&7&oMaszyna'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Bufora'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektryczny Kompostownik'
+  type:
+    - '&7&oMaszyna'
+  stats:
+    - '&8⇨ &b⚡ &7Prędkość: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Bufora'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektryczny Kompostownik II'
+  type:
+    - '&7&oMaszyna'
+  stats:
+    - '&8⇨ &b⚡ &7Prędkość: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Bufora'
+
+COBBLESTONE_GENERATOR:
+  name: 'Generator Bruku'
+  type:
+    - '&7&oMaszyna'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Bufora'
+
+VAPORIZER:
+  name: 'Parownik'
+  type:
+    - '&7&oMaszyna'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Bufora'
+
+CONCRETE_FACTORY:
+  name: 'Fabryka Betonu'
+  type:
+    - '&7&oMaszyna'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Bufora'
+
+PULVERIZER:
+  name: 'Rozdrabniacz'
+  type:
+    - '&7&oMaszyna'
+  stats:
+    - '&8⇨ &b⚡ &7Prędkość: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Bufora'

@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Ciocan'
+  type:
+    - '&7&oUnealtă'
+  description:
+    - '&9Pulverizează blocurile'
+
+GOLD_TRANSMUTER:
+  name: 'Transmutator de Aur'
+  type:
+    - '&7&oMașină'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+ELECTRIC_COMPOSTER:
+  name: 'Compostor Electric'
+  type:
+    - '&7&oMașină'
+  stats:
+    - '&8⇨ &b⚡ &7Viteză: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Compostor Electric II'
+  type:
+    - '&7&oMașină'
+  stats:
+    - '&8⇨ &b⚡ &7Viteză: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+COBBLESTONE_GENERATOR:
+  name: 'Generator de Piatră Cubică'
+  type:
+    - '&7&oMașină'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Tampon'
+
+VAPORIZER:
+  name: 'Vaporizator'
+  type:
+    - '&7&oMașină'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+CONCRETE_FACTORY:
+  name: 'Fabrică de Beton'
+  type:
+    - '&7&oMașină'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'
+
+PULVERIZER:
+  name: 'Pulverizator'
+  type:
+    - '&7&oMașină'
+  stats:
+    - '&8⇨ &b⚡ &7Viteză: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Tampon'

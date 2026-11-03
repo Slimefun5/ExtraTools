@@ -1,5 +1,7 @@
 package me.sfiguz7.extratools.implementation.machines;
 
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
@@ -7,7 +9,6 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.sfiguz7.extratools.lists.ETItems;
-import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
@@ -17,25 +18,25 @@ public class Vaporizer extends AContainer implements RecipeDisplayItem {
 
     public Vaporizer() {
         super(ETItems.extra_tools, ETItems.VAPORIZER, RecipeType.ENHANCED_CRAFTING_TABLE,
-            new ItemStack[] {new ItemStack(Material.MAGMA_BLOCK), SlimefunItems.ELECTRIC_MOTOR.item(),
-                new ItemStack(Material.MAGMA_BLOCK),
+            new ItemStack[] {MaterialCompat.stack(XMaterial.MAGMA_BLOCK), SlimefunItems.ELECTRIC_MOTOR.item(),
+                MaterialCompat.stack(XMaterial.MAGMA_BLOCK),
                 SlimefunItems.HEATING_COIL.item(), SlimefunItems.FLUID_PUMP.item(), SlimefunItems.HEATING_COIL.item(),
-                new ItemStack(Material.MAGMA_BLOCK), SlimefunItems.MEDIUM_CAPACITOR.item(),
-                new ItemStack(Material.MAGMA_BLOCK)});
+                MaterialCompat.stack(XMaterial.MAGMA_BLOCK), SlimefunItems.MEDIUM_CAPACITOR.item(),
+                MaterialCompat.stack(XMaterial.MAGMA_BLOCK)});
     }
 
     @Override
     protected void registerDefaultRecipes() {
 
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.WATER_BUCKET)},
-            new ItemStack[] {new ItemStack(Material.BUCKET),
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.WATER_BUCKET)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.BUCKET),
                 CustomItemStack.create(SlimefunItems.SALT.item(), 4)
             });
-        registerRecipe(8, new ItemStack[] {new ItemStack(Material.LAVA_BUCKET)},
-            new ItemStack[] {new ItemStack(Material.BUCKET),
+        registerRecipe(8, new ItemStack[] {MaterialCompat.stack(XMaterial.LAVA_BUCKET)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.BUCKET),
                 CustomItemStack.create(SlimefunItems.SULFATE.item(), 16)
             });
-        registerRecipe(3, new ItemStack[] {new ItemStack(Material.MAGMA_BLOCK)},
+        registerRecipe(3, new ItemStack[] {MaterialCompat.stack(XMaterial.MAGMA_BLOCK)},
             new ItemStack[] {SlimefunItems.SULFATE.item()});
 
     }
@@ -54,7 +55,7 @@ public class Vaporizer extends AContainer implements RecipeDisplayItem {
 
     @Override
     public ItemStack getProgressBar() {
-        return new ItemStack(Material.IRON_HOE);
+        return MaterialCompat.stack(XMaterial.IRON_HOE);
     }
 
     @Override

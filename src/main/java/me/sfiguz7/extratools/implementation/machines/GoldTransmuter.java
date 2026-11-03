@@ -1,12 +1,13 @@
 package me.sfiguz7.extratools.implementation.machines;
 
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.sfiguz7.extratools.lists.ETItems;
-import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
@@ -18,38 +19,38 @@ public class GoldTransmuter extends AContainer implements RecipeDisplayItem {
         super(ETItems.extra_tools, ETItems.GOLD_TRANSMUTER, RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[] {null, SlimefunItems.SILVER_INGOT.item(), null,
                 SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.GOLD_24K_BLOCK.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
-                new ItemStack(Material.GOLDEN_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR.item(),
-                new ItemStack(Material.GOLDEN_PICKAXE)});
+                MaterialCompat.stack(XMaterial.GOLDEN_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR.item(),
+                MaterialCompat.stack(XMaterial.GOLDEN_PICKAXE)});
     }
 
     @Override
     protected void registerDefaultRecipes() {
 
         registerRecipe(7, new ItemStack[] {SlimefunItems.GOLD_24K_BLOCK.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_BLOCK)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_BLOCK)});
         registerRecipe(2, new ItemStack[] {SlimefunItems.GOLD_4K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 4)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 4)});
         registerRecipe(2, new ItemStack[] {SlimefunItems.GOLD_6K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 9)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 9)});
         registerRecipe(3, new ItemStack[] {SlimefunItems.GOLD_8K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 13)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 13)});
         registerRecipe(3, new ItemStack[] {SlimefunItems.GOLD_10K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 18)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 18)});
         registerRecipe(4, new ItemStack[] {SlimefunItems.GOLD_12K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 22)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 22)});
         registerRecipe(4, new ItemStack[] {SlimefunItems.GOLD_14K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 27)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 27)});
         registerRecipe(5, new ItemStack[] {SlimefunItems.GOLD_16K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 31)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 31)});
         registerRecipe(5, new ItemStack[] {SlimefunItems.GOLD_18K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 36)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 36)});
         registerRecipe(6, new ItemStack[] {SlimefunItems.GOLD_20K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 40)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 40)});
         registerRecipe(6, new ItemStack[] {SlimefunItems.GOLD_22K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 45)});
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 45)});
         registerRecipe(7, new ItemStack[] {SlimefunItems.GOLD_24K.item()},
-            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 49)});
-        registerRecipe(2, new ItemStack[] {new ItemStack(Material.GOLD_INGOT)},
+            new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_NUGGET, 49)});
+        registerRecipe(2, new ItemStack[] {MaterialCompat.stack(XMaterial.GOLD_INGOT)},
             new ItemStack[] {SlimefunItems.GOLD_DUST.item()});
     }
 
@@ -67,7 +68,7 @@ public class GoldTransmuter extends AContainer implements RecipeDisplayItem {
 
     @Override
     public ItemStack getProgressBar() {
-        return new ItemStack(Material.GOLDEN_PICKAXE);
+        return MaterialCompat.stack(XMaterial.GOLDEN_PICKAXE);
     }
 
     @Override

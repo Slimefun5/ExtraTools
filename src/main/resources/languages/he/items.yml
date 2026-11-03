@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'פטיש'
+  type:
+    - '&7&oכלי'
+  description:
+    - '&9מרסק בלוקים לאבקה'
+
+GOLD_TRANSMUTER:
+  name: 'ממיר זהב'
+  type:
+    - '&7&oמכונה'
+  stats:
+    - '&8⇨ &e⚡ &718 J/שנייה'
+    - '&8⇨ &e⚡ &7מאגר 256 J'
+
+ELECTRIC_COMPOSTER:
+  name: 'מקומפסטר חשמלי'
+  type:
+    - '&7&oמכונה'
+  stats:
+    - '&8⇨ &b⚡ &7מהירות: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/שנייה'
+    - '&8⇨ &e⚡ &7מאגר 256 J'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'מקומפסטר חשמלי II'
+  type:
+    - '&7&oמכונה'
+  stats:
+    - '&8⇨ &b⚡ &7מהירות: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/שנייה'
+    - '&8⇨ &e⚡ &7מאגר 256 J'
+
+COBBLESTONE_GENERATOR:
+  name: 'מחולל אבן מרוצפת'
+  type:
+    - '&7&oמכונה'
+  stats:
+    - '&8⇨ &e⚡ &732 J/שנייה'
+    - '&8⇨ &e⚡ &7מאגר 512 J'
+
+VAPORIZER:
+  name: 'מאדה'
+  type:
+    - '&7&oמכונה'
+  stats:
+    - '&8⇨ &e⚡ &732 J/שנייה'
+    - '&8⇨ &e⚡ &7מאגר 256 J'
+
+CONCRETE_FACTORY:
+  name: 'מפעל בטון'
+  type:
+    - '&7&oמכונה'
+  stats:
+    - '&8⇨ &e⚡ &716 J/שנייה'
+    - '&8⇨ &e⚡ &7מאגר 256 J'
+
+PULVERIZER:
+  name: 'מרסק'
+  type:
+    - '&7&oמכונה'
+  stats:
+    - '&8⇨ &b⚡ &7מהירות: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/שנייה'
+    - '&8⇨ &e⚡ &7מאגר 256 J'

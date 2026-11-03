@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Hammare'
+  type:
+    - '&7&oVerktyg'
+  description:
+    - '&9Pulveriserar block'
+
+GOLD_TRANSMUTER:
+  name: 'Guldtransmutator'
+  type:
+    - '&7&oMaskin'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffert'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektrisk Kompostör'
+  type:
+    - '&7&oMaskin'
+  stats:
+    - '&8⇨ &b⚡ &7Hastighet: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffert'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektrisk Kompostör II'
+  type:
+    - '&7&oMaskin'
+  stats:
+    - '&8⇨ &b⚡ &7Hastighet: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffert'
+
+COBBLESTONE_GENERATOR:
+  name: 'Kullerstensgenerator'
+  type:
+    - '&7&oMaskin'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Buffert'
+
+VAPORIZER:
+  name: 'Förångare'
+  type:
+    - '&7&oMaskin'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffert'
+
+CONCRETE_FACTORY:
+  name: 'Betongfabrik'
+  type:
+    - '&7&oMaskin'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffert'
+
+PULVERIZER:
+  name: 'Pulveriserare'
+  type:
+    - '&7&oMaskin'
+  stats:
+    - '&8⇨ &b⚡ &7Hastighet: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Buffert'

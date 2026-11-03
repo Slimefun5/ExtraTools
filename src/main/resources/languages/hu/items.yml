@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Kalapács'
+  type:
+    - '&7&oEszköz'
+  description:
+    - '&9Porrá zúzza a blokkokat'
+
+GOLD_TRANSMUTER:
+  name: 'Aranyátalakító'
+  type:
+    - '&7&oGép'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Puffer'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektromos komposztáló'
+  type:
+    - '&7&oGép'
+  stats:
+    - '&8⇨ &b⚡ &7Sebesség: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J Puffer'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektromos komposztáló II'
+  type:
+    - '&7&oGép'
+  stats:
+    - '&8⇨ &b⚡ &7Sebesség: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Puffer'
+
+COBBLESTONE_GENERATOR:
+  name: 'Macskakő-generátor'
+  type:
+    - '&7&oGép'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J Puffer'
+
+VAPORIZER:
+  name: 'Párologtató'
+  type:
+    - '&7&oGép'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J Puffer'
+
+CONCRETE_FACTORY:
+  name: 'Betongyár'
+  type:
+    - '&7&oGép'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J Puffer'
+
+PULVERIZER:
+  name: 'Porító'
+  type:
+    - '&7&oGép'
+  stats:
+    - '&8⇨ &b⚡ &7Sebesség: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J Puffer'

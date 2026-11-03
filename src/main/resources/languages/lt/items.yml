@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Kūjis'
+  type:
+    - '&7&oĮrankis'
+  description:
+    - '&9Sutrina blokus į miltelius'
+
+GOLD_TRANSMUTER:
+  name: 'Aukso transmuteris'
+  type:
+    - '&7&oMašina'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektrinis kompostuotojas'
+  type:
+    - '&7&oMašina'
+  stats:
+    - '&8⇨ &b⚡ &7Greitis: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektrinis kompostuotojas II'
+  type:
+    - '&7&oMašina'
+  stats:
+    - '&8⇨ &b⚡ &7Greitis: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+COBBLESTONE_GENERATOR:
+  name: 'Grindinio akmens generatorius'
+  type:
+    - '&7&oMašina'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J buferis'
+
+VAPORIZER:
+  name: 'Garintuvas'
+  type:
+    - '&7&oMašina'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+CONCRETE_FACTORY:
+  name: 'Betono gamykla'
+  type:
+    - '&7&oMašina'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'
+
+PULVERIZER:
+  name: 'Smulkintuvas'
+  type:
+    - '&7&oMašina'
+  stats:
+    - '&8⇨ &b⚡ &7Greitis: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J buferis'

@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'چکش'
+  type:
+    - '&7&oابزار'
+  description:
+    - '&9بلوک‌ها را پودر می‌کند'
+
+GOLD_TRANSMUTER:
+  name: 'مبدل طلا'
+  type:
+    - '&7&oماشین'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7بافر 256 J'
+
+ELECTRIC_COMPOSTER:
+  name: 'کمپوست‌ساز برقی'
+  type:
+    - '&7&oماشین'
+  stats:
+    - '&8⇨ &b⚡ &7سرعت: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7بافر 256 J'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'کمپوست‌ساز برقی II'
+  type:
+    - '&7&oماشین'
+  stats:
+    - '&8⇨ &b⚡ &7سرعت: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7بافر 256 J'
+
+COBBLESTONE_GENERATOR:
+  name: 'مولد سنگ‌فرش'
+  type:
+    - '&7&oماشین'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7بافر 512 J'
+
+VAPORIZER:
+  name: 'تبخیرکننده'
+  type:
+    - '&7&oماشین'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7بافر 256 J'
+
+CONCRETE_FACTORY:
+  name: 'کارخانه بتن'
+  type:
+    - '&7&oماشین'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7بافر 256 J'
+
+PULVERIZER:
+  name: 'پودرکننده'
+  type:
+    - '&7&oماشین'
+  stats:
+    - '&8⇨ &b⚡ &7سرعت: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7بافر 256 J'

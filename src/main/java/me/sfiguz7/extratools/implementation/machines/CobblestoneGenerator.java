@@ -1,5 +1,7 @@
 package me.sfiguz7.extratools.implementation.machines;
 
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.attributes.EnergyNetComponent;
@@ -16,7 +18,6 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.sfiguz7.extratools.implementation.interfaces.ETInventoryBlock;
 import me.sfiguz7.extratools.lists.ETItems;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
@@ -37,8 +38,8 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
         super(ETItems.extra_tools, ETItems.COBBLESTONE_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[] {SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(), SlimefunItems.MAGNESIUM_INGOT.item(),
                 SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(),
-                new ItemStack(Material.WATER_BUCKET), SlimefunItems.BLISTERING_INGOT_3.item(),
-                new ItemStack(Material.LAVA_BUCKET),
+                MaterialCompat.stack(XMaterial.WATER_BUCKET), SlimefunItems.BLISTERING_INGOT_3.item(),
+                MaterialCompat.stack(XMaterial.LAVA_BUCKET),
                 SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item(), SlimefunItems.BIG_CAPACITOR.item(),
                 SlimefunItems.PROGRAMMABLE_ANDROID_MINER.item()});
 
@@ -49,15 +50,15 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
 
     private void constructMenu(BlockMenuPreset preset) {
         for (int i : border) {
-            preset.addItem(i, CustomItemStack.create(Material.GRAY_STAINED_GLASS_PANE, " "),
+            preset.addItem(i, CustomItemStack.create(MaterialCompat.stack(XMaterial.GRAY_STAINED_GLASS_PANE), " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : inputBorder) {
-            preset.addItem(i, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "),
+            preset.addItem(i, CustomItemStack.create(MaterialCompat.stack(XMaterial.CYAN_STAINED_GLASS_PANE), " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
         for (int i : outputBorder) {
-            preset.addItem(i, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "),
+            preset.addItem(i, CustomItemStack.create(MaterialCompat.stack(XMaterial.ORANGE_STAINED_GLASS_PANE), " "),
                 ChestMenuUtils.getEmptyClickHandler());
         }
 
@@ -121,7 +122,7 @@ public class CobblestoneGenerator extends SimpleSlimefunItem<BlockTicker> implem
                     return;
                 }
 
-                ItemStack output = new ItemStack(Material.COBBLESTONE);
+                ItemStack output = MaterialCompat.stack(XMaterial.COBBLESTONE);
 
                 if (getCharge(b.getLocation()) >= ENERGY_CONSUMPTION) {
                     BlockMenu menu = BlockStorage.getInventory(b);

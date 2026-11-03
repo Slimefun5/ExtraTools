@@ -1,0 +1,65 @@
+HAMMER:
+  name: 'Kladivo'
+  type:
+    - '&7&oNástroj'
+  description:
+    - '&9Drví bloky na prach'
+
+GOLD_TRANSMUTER:
+  name: 'Transmutátor zlata'
+  type:
+    - '&7&oStroj'
+  stats:
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J zásobník'
+
+ELECTRIC_COMPOSTER:
+  name: 'Elektrický kompostér'
+  type:
+    - '&7&oStroj'
+  stats:
+    - '&8⇨ &b⚡ &7Rýchlosť: &b1.0x'
+    - '&8⇨ &e⚡ &718 J/s'
+    - '&8⇨ &e⚡ &7256 J zásobník'
+
+ELECTRIC_COMPOSTER_2:
+  name: 'Elektrický kompostér II'
+  type:
+    - '&7&oStroj'
+  stats:
+    - '&8⇨ &b⚡ &7Rýchlosť: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J zásobník'
+
+COBBLESTONE_GENERATOR:
+  name: 'Generátor dlažbového kameňa'
+  type:
+    - '&7&oStroj'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7512 J zásobník'
+
+VAPORIZER:
+  name: 'Odparovač'
+  type:
+    - '&7&oStroj'
+  stats:
+    - '&8⇨ &e⚡ &732 J/s'
+    - '&8⇨ &e⚡ &7256 J zásobník'
+
+CONCRETE_FACTORY:
+  name: 'Továreň na betón'
+  type:
+    - '&7&oStroj'
+  stats:
+    - '&8⇨ &e⚡ &716 J/s'
+    - '&8⇨ &e⚡ &7256 J zásobník'
+
+PULVERIZER:
+  name: 'Drvič'
+  type:
+    - '&7&oStroj'
+  stats:
+    - '&8⇨ &b⚡ &7Rýchlosť: &b4.0x'
+    - '&8⇨ &e⚡ &750 J/s'
+    - '&8⇨ &e⚡ &7256 J zásobník'
